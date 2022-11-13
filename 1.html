@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAD-1</title>
+</head>
+<body>
+
+    <form name="calc">
+        <label>Number1</label>
+        <input type="text" name="n1">
+
+        <label>Number2</label>
+        <input type="text" name="n2">
+
+        <input type="button" value="add" onClick="add()">
+
+        <input type="button" value="sub" onClick="sub()">
+        <input type="button" value="mul" onClick="mul()">
+        <input type="button" value="div" onClick="div()">
+
+        <input type="text" name="n3">
+
+        <input type="reset" value="clear">
+
+
+
+    </form>
+
+</body>
+<script>
+    function add(){
+        var v1=document.calc.n1.value;
+
+        var v2=document.calc.n2.value;
+
+        var r=parseInt(v1)+parseInt(v2);
+
+        document.calc.n3.value=r;
+
+    }
+    function sub(){
+        var v1=document.calc.n1.value;
+
+        var v2=document.calc.n2.value;
+
+        var r=parseInt(v1)-parseInt(v2);
+
+        document.calc.n3.value=r;
+
+    }
+    function mul(){
+        var v1=document.calc.n1.value;
+
+        var v2=document.calc.n2.value;
+
+        var r=parseInt(v1)*parseInt(v2);
+
+        document.calc.n3.value=r;
+
+    }
+    function div(){
+        var v1=document.calc.n1.value;
+
+        var v2=document.calc.n2.value;
+
+        var r=parseInt(v1)/parseInt(v2);
+
+        document.calc.n3.value=r;
+
+    }
+</script>
+</html>
